@@ -5,6 +5,11 @@ Zombie::Zombie() {
 	std::cout << "* Constracter is Called *" << std::endl;
 }
 
+Zombie::Zombie(std::string n) {
+	name = n;
+	std::cout << "* " << name << " Constracter is Called *" << std::endl;
+}
+
 Zombie::~Zombie() {
 	std::cout << "* " << name;
 	std::cout << " is Deleted *" << std::endl;

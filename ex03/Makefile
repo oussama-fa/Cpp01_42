@@ -1,4 +1,4 @@
-NAME = ZombieHorde
+NAME = UnnecessaryViolence
 
 CXX = c++
 
@@ -6,9 +6,9 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98 #-fsanitize=address
 
 RM = rm -f
 
-SRC = main.cpp Zombie.cpp zombieHorde.cpp
+SRC = main.cpp  Weapon.cpp HumanA.cpp  HumanB.cpp
 
-INC = Zombie.hpp
+INC = Weapon.hpp HumanA.hpp  HumanB.hpp
 
 OBJ = $(SRC:.cpp=.o)
 

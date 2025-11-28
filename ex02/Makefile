@@ -1,4 +1,4 @@
-NAME = Zombie
+NAME = ZombieBrain
 
 CXX = c++
 
