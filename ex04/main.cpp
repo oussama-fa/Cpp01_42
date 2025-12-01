@@ -1,7 +1,6 @@
 #include "replace.hpp"
 
-int main(int ac, char **av)
-{
+int main(int ac, char **av) {
 	if (ac != 4) {
 		std::cerr << "Error: Wrong Number of Arguments !!" << std::endl;
 		return (1);
@@ -32,7 +31,6 @@ int main(int ac, char **av)
 
 	std::string res;
 	size_t pos = 0;
-
 	while (true) {
 		size_t found = content.find(s1, pos);
 		if (found == std::string::npos)
@@ -42,11 +40,8 @@ int main(int ac, char **av)
 		pos = found + s1.length();
 	}
 	res += content.substr(pos);
-
 	outPutFile << res;
-
 	outPutFile.close();
 	fileName.close();
-
 	return (0);
 }
