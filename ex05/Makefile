@@ -1,4 +1,4 @@
-NAME = Replace
+NAME = Harl2.0
 
 CXX = c++
 
@@ -6,9 +6,9 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 RM = rm -f
 
-SRC = main.cpp
+SRC = main.cpp Harl.cpp
 
-INC = replace.hpp
+INC = Harl.hpp
 
 OBJ = $(SRC:.cpp=.o)
 
