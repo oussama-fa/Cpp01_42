@@ -1,4 +1,4 @@
-NAME = UnnecessaryViolence
+NAME = Replace
 
 CXX = c++
 
@@ -6,9 +6,9 @@ CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 RM = rm -f
 
-SRC = main.cpp  Weapon.cpp HumanA.cpp  HumanB.cpp
+SRC = main.cpp
 
-INC = Weapon.hpp HumanA.hpp  HumanB.hpp
+INC = 
 
 OBJ = $(SRC:.cpp=.o)
 
