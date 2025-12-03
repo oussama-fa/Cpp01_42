@@ -8,8 +8,6 @@ RM = rm -f
 
 SRC = main.cpp
 
-INC = replace.hpp
-
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
@@ -17,7 +15,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CXX) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
-%.o:%.cpp $(INC)
+%.o:%.cpp 
 	$(CXX) $(CPPFLAGS) -c $< -o $@
 
 clean:

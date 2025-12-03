@@ -39,7 +39,7 @@ void Harl::complain(std::string level)
     for (int i = 0; i < 4; i++) {
         if (table[i].level == level) {
             (this->*table[i].func)();
-            return;
+            return ;
         }
     }
     std::cout << "Wrong Input ! This " << level << " is Invalid\n";

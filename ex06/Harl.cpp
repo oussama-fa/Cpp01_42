@@ -29,18 +29,18 @@ void	Harl::complain(std::string level) {
 	switch (flag) {
 		case 1:
 			debug();
-			break;
+			// fall through
 		case 2:
 			info();
-			break;
+			// fall through
 		case 3:
 			warning();
-			break;
+			// fall through
 		case 4:
 			error();
 			break;
 		default:
-			std::cout << "Wrong Input ! This " << level << " is Invalid\n";
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 			break;
 	}
 }

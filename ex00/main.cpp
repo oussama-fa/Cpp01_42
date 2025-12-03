@@ -8,9 +8,11 @@ int main() {
 	std::cout << "==================newZombie===================" << std::endl;
 
 	Zombie *obj2 = newZombie("MESSI");
+	obj2->announce();
 	delete obj2;
 
 	Zombie *obj3 = newZombie("CR7");
+	obj3->announce();
 	delete obj3;
 
 	std::cout << "==================randomChump===================" << std::endl;

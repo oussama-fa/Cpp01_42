@@ -1,4 +1,6 @@
-#include "replace.hpp"
+# include <iostream>
+# include <fstream>
+# include <string>
 
 int main(int ac, char **av) {
 	if (ac != 4) {
