@@ -29,13 +29,19 @@ void	Harl::complain(std::string level) {
 	switch (flag) {
 		case 1:
 			debug();
-			// fall through
+			info();
+			warning();
+			error();
+			break ;
 		case 2:
 			info();
-			// fall through
+			warning();
+			error();
+			break ;
 		case 3:
 			warning();
-			// fall through
+			error();
+			break ;
 		case 4:
 			error();
 			break;
