@@ -1,12 +1,5 @@
 #include "Harl.hpp"
 
-typedef void (Harl::*HarlFunc)();
-
-struct LevelMap {
-    std::string level;
-    HarlFunc    func;
-};
-
 void Harl::debug( void )
 {
     std::cout << "[ DEBUG ]" << std::endl;

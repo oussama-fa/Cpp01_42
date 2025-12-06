@@ -3,6 +3,8 @@
 
 # include <iostream>
 
+
+
 class Harl {
 private:
     void debug( void );
@@ -11,6 +13,13 @@ private:
     void error( void );
 public:
     void complain( std::string level );
+};
+
+typedef void (Harl::*HarlFunc)();
+
+struct LevelMap {
+    std::string level;
+    HarlFunc    func;
 };
 
 #endif
