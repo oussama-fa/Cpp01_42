@@ -21,7 +21,7 @@ Zombie* zombieHorde( int N, std::string name ) {
 
 	for (size_t	i = 0; i < (size_t)N; i++) {
 		z[i].setName(name + " " + ft_itos(i + 1));
-		std::cout << z[i].getName() << ": BraiiiiiiinnnzzzZ..." << std::endl;
+		z[i].announce();
 	}
 	return z;
 }
