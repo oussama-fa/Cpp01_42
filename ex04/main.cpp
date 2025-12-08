@@ -28,6 +28,7 @@ int main(int ac, char **av) {
 	std::ofstream outPutFile(newFileName.c_str());
 	if (!outPutFile.is_open()) {
 		std::cerr << "Error: Cannot open output file !!" << std::endl;
+		fileName.close();
 		return (4);
 	}
 
